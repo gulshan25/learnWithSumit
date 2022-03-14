@@ -27,3 +27,12 @@ function myStyling() {
 carName = 'volvo';
 let carName;
 console.log(carName);
+console.log(typeof 'hello');
+
+let a =3;
+let b = (100 + 50) * a;
+document.getElementById("demo").innerHTML = b;
+
+let text1 = 'Hello,';
+text1 += 'World!';
+document.getElementById("pra2").innerHTML = text1;

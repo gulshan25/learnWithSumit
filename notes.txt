@@ -3,3 +3,5 @@
 2.ar const hocche etar value change kora jabe na,korle error dibe
 
 3.let ar const must use kora lagbe. var use kora lagbe na.
+
+4. fixed values are called literals.

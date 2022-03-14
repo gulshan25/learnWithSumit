@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>js introduction</title>
+</head>
+<body>
+    <!-- JS Home -->
+
+    <h2>My First Javascript</h2>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date & Time.</button>
+
+    <p id="demo"></p>
+
+    <!-- JS Introduction -->
+
+    <h2>What can Javascript Do?</h2>
+
+    <p id="demo">Javascript can change HTML content</p>
+
+    <!-- single quotes -->
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML 
+    = 'Hello Javascript!' ">Click Me!</button>
+
+    
+    <h2>What can Javascript Do?</h2>
+
+    <p id="text">Javascript can change HTML content</p>
+
+    <!-- double quotes -->
+
+    <button type="button" onclick='document.getElementById("text").innerHTML = "Hello Javascript!"'>Click Me!</button>
+    
+    <h2>What can Javascript Do?</h2>
+
+    <p id="demo">Javascript can change HTML content</p>
+
+    <!-- single quotes -->
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML 
+    = 'Hello Javascript!' ">Click Me!</button>
+
+    <h2>What can Javascript Do?</h2>
+
+    <p>Javascript can change HTML attributes values.</p>
+
+    <p>In this case JavaScript 
+        changes the value of the 
+        src (source) attribute of
+         an image.</p>
+
+    <!-- image changes -->
+
+    <button type="button" onclick="document.getElementById('myImage').src 
+    = './img/images.jpg' ">Turn on the light</button>
+
+    <img src="./img/download.jpg" alt="Light" id="myImage" style="width:100px">
+
+    <button type="button" onclick="document.getElementById('myImage').src 
+    = './img/download.jpg' ">Turn off the light</button>
+
+    <p id="pra">Javascript can change the style of an HTML element.</p>
+
+    <button type="button" onclick="document.getElementById('pra').style.fontSize = '35px' ">Click Me!</button>
+    
+    <p id="demo2">Javascript can hide HTML elements</p>
+
+    <button type="button" onclick="document.getElementById('demo2').style.display = 'none'">Click me for hide</button>
+
+    <p>Javascript can show hidden HTML elements</p>
+
+    <p id="demo3" style="display:none">Hello JavaScript!</p>
+
+    <button type="button" onclick="document.getElementById('demo3').style.display = 'block'">Click me to show</button>
+
+    <p id="pra2"></p>
+    <script src="./js/text.js"></script>
+</body>
+</html>
