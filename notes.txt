@@ -1,0 +1,5 @@
+1.let ar var er moddhe difference hocche var type check kore na. let kore. Let use kora uchit. 
+
+2.ar const hocche etar value change kora jabe na,korle error dibe
+
+3.let ar const must use kora lagbe. var use kora lagbe na.
