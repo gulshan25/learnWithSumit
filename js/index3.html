@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+
+<script>
+
+let x ;
+x = 16 + "Volvo" ;
+document.getElementById("demo").innerHTML = x ;
+
+let y ;
+y = "Volvo" + 16 + 4 ;
+document.getElementById("demo2").innerHTML = y ;
+
+let z ;
+z = "Volvo" + 16 ;
+document.getElementById("demo3").innerHTML = z ;
+
+let a ; 
+a = 5;
+a = "Hello";
+document.getElementById("demo4").innerHTML = typeof a ;
+
+const fruits = ['mango','banana','cherry'];
+document.getElementById("demo5").innerHTML = fruits[1];
+
+const person = {
+    firstName : "John",
+    lastName : "Smith",
+    age : 30,
+    eyeColor : "black"
+};
+
+document.getElementById("demo6").innerHTML 
+= person.firstName + person.lastName + "is" + person.age + "years old" + "<br>" + "His" + "eyes color" + "is" + person.eyeColor;
+
+let g = 1;
+let u = 2;
+let l = 3;
+
+let myObject = {g:1,u:2,l:3};
+
+console.log(myObject);
+</script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/text.js"></script>
+</body>
+</html>
