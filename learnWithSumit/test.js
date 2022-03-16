@@ -38,3 +38,5 @@ const car = {
 //console.log(car.weight);
 
 console.log(car[model]);
+
+
