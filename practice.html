@@ -18,7 +18,7 @@
 
     <p id="demo"></p>
     <p id="demo1"></p>
-    <p id="demo2"></p>
+    
     
     </header>
     <main>
@@ -67,7 +67,6 @@
     
     <!-- Container -->
 
-
     <!-- JS Event -->
 
     <!-- JS objects -->
@@ -79,6 +78,12 @@
     <p id="carsName"></p>
 
     </aside>
+
+    <nav>
+        <h2>Javascript objects</h2>
+
+        <p id="demo2"></p>
+    </nav>
 
     <!-- JS objects -->
 
@@ -128,11 +133,23 @@
         // aside
         
         // Create and display a variable:
-        let car = "Fiat";
-        document.getElementById("carsName").innerHTML = car;
+        let car1 = "Fiat";
+        document.getElementById("carsName").innerHTML = car1;
         
 
         // aside
+
+        //nav
+
+        //Create an Object:
+        const car2 = {type:"Fiat", model:"500", color:"white"};
+        //Display some data from the object:
+        document.getElementById("demo2").innerHTML = car2.type;
+        document.getElementById("demo2").innerHTML = "The car type is " + car2.type;
+        document.getElementById("demo2").innerHTML = "The car type is " + car2.type + "<br>" + "The car model is " + car2.model + "<br>" + "The car color is " + car2.color;
+
+
+        //nav
 
     </script>
 </body>
