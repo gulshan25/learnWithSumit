@@ -10,12 +10,9 @@ console.log(str2.slice(-12, -6));
 let num1 = "1, 2, 3";
 console.log(num1.slice(4, 3));
 
-const num2 = "1, 2, 3";
-console.log(num2.slice(-1, -1));
+let num2 = "1, 2, 3";
+console.log(num2.slice( -1, -1));
 
-let str = "Apple, banana, kiwi";
+let str = "Apple, Banana, Kiwi";
 let banana = str.slice(7, 13);
 console.log(banana);
-
-let text = "Hello world";
-console.log(text.startsWith("world, 6"));
