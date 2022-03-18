@@ -83,11 +83,68 @@
         <h2>Javascript objects</h2>
 
         <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
     </nav>
+    <table>
+        <h2>Javascript Objects</h2>
+        <p id="pr"></p>
+        <p id="pr1"></p>
+        <p id="pr2"></p>
+    </table>
 
     <!-- JS objects -->
+    <footer>
+        <h2>JavaScript Functions</h2>
+
+        <p>This example calls a function which performs a calculation, and returns the result:</p>
+
+        <p id="example1"></p>
+        <p id="example2"></p>
+        <p id="example3"></p>
+        <p id="example4"></p>
+        <p id="example5"></p>
+        <p id="example6"></p>
+    </footer>
+
 
     <script>
+        //footer
+
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+        document.getElementById("example1").innerHTML = myFunction(4, 3);
+
+        var x = myFunction(4, 3);
+        document.getElementById("example2").innerHTML = x;
+
+        function myFunction(a, b) {
+            return a * b;
+        }
+
+        //footer
+
+        //table
+        
+        // create an object:
+        const person = {firstName: 'John',
+         lastName: 'Doe',
+          age: 30,
+           eyeColor: 'blue',
+        fullName: function() {
+            return this.firstName + " " + this.lastName;
+        }
+        };
+        //Display some data from the object:
+        document.getElementById("pr").innerHTML = person.firstName + " is " + person.age + " years old. ";
+        document.getElementById("pr1").innerHTML = person.fullName();
+        document.getElementById("pr2").innerHTML = person.fullName();
+
+        //table
+
         //header
 
         let text = "Gulshan Rahman";
@@ -145,8 +202,9 @@
         const car2 = {type:"Fiat", model:"500", color:"white"};
         //Display some data from the object:
         document.getElementById("demo2").innerHTML = car2.type;
-        document.getElementById("demo2").innerHTML = "The car type is " + car2.type;
-        document.getElementById("demo2").innerHTML = "The car type is " + car2.type + "<br>" + "The car model is " + car2.model + "<br>" + "The car color is " + car2.color;
+        document.getElementById("demo3").innerHTML = "The car type is " + car2.type;
+        document.getElementById("demo4").innerHTML = "The car type is " + car2.type + "<br>" + "The car model is " + car2.model + "<br>" + "The car color is " + car2.color;
+        document.getElementById("demo5").innerHTML = "The car type is " + car2.type + "<br>" + " " + car2.model + "<br>" + " " + car2.color;
 
 
         //nav
