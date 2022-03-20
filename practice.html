@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Js Strings -->
     <header>
+      <h2>Javascript String properties</h2>
 
-    <h2>Javascript String properties</h2>
-    
-    <p>The length property returns the length of a string:</p>
+      <p>The length property returns the length of a string:</p>
 
-    <p id="demo"></p>
-    <p id="demo1"></p>
-    
-    
+      <p id="demo"></p>
+      <p id="demo1"></p>
     </header>
     <main>
-        <h2>Javascript Strings</h2>
+      <h2>Javascript Strings</h2>
 
-        <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+      <p>
+        You can use quotes inside a string, as long as they don't match the
+        quotes surrounding the string.
+      </p>
 
-        <p id="pra1"></p>
+      <p id="pra1"></p>
     </main>
 
     <section>
-        <h2>JavaScript Strings</h2>
+      <h2>JavaScript Strings</h2>
 
-<p>Strings are written inside quotes. You can use single or double quotes:</p>
+      <p>
+        Strings are written inside quotes. You can use single or double quotes:
+      </p>
 
-<p id="pra2"></p>    
+      <p id="pra2"></p>
     </section>
 
     <article>
-        <h2>javascript Strings</h2>
-        <p id="pra3"></p>
-
+      <h2>javascript Strings</h2>
+      <p id="pra3"></p>
     </article>
-
-   
 
     <!-- Js Strings -->
 
     <!-- JS Event -->
 
-    <button onclick="document.getElementById('p1').innerHTML = Date()">The time is?</button>
+    <button onclick="document.getElementById('p1').innerHTML = Date()">
+      The time is?
+    </button>
 
     <p id="p1"></p>
 
@@ -64,7 +64,7 @@
     <button onmouseout="displayDate()">time</button>
     <button onkeydown="displayDate()">time</button>
     <button onload="displayDate()">time</button>
-    
+
     <!-- Container -->
 
     <!-- JS Event -->
@@ -72,143 +72,167 @@
     <!-- JS objects -->
 
     <aside>
+      <h2>Javascript Variables</h2>
 
-    <h2>Javascript Variables</h2>
-
-    <p id="carsName"></p>
-
+      <p id="carsName"></p>
     </aside>
 
     <nav>
-        <h2>Javascript objects</h2>
+      <h2>Javascript objects</h2>
 
-        <p id="demo2"></p>
-        <p id="demo3"></p>
-        <p id="demo4"></p>
-        <p id="demo5"></p>
-        <p id="demo6"></p>
+      <p id="demo2"></p>
+      <p id="demo3"></p>
+      <p id="demo4"></p>
+      <p id="demo5"></p>
+      <p id="demo6"></p>
     </nav>
     <table>
-        <h2>Javascript Objects</h2>
-        <p id="pr"></p>
-        <p id="pr1"></p>
-        <p id="pr2"></p>
+      <h2>Javascript Objects</h2>
+      <p id="pr"></p>
+      <p id="pr1"></p>
+      <p id="pr2"></p>
     </table>
 
     <!-- JS objects -->
     <footer>
-        <h2>JavaScript Functions</h2>
+      <h2>JavaScript Functions</h2>
 
-        <p>This example calls a function which performs a calculation, and returns the result:</p>
+      <p>
+        This example calls a function which performs a calculation, and returns
+        the result:
+      </p>
 
-        <p id="example1"></p>
-        <p id="example2"></p>
-        <p id="example3"></p>
-        <p id="example4"></p>
-        <p id="example5"></p>
-        <p id="example6"></p>
+      <p id="example1"></p>
+      <p id="example2"></p>
+      <p id="example3"></p>
+      <p id="example4"></p>
+      <p id="example5"></p>
+      <p id="example6"></p>
     </footer>
 
-
     <script>
-        //footer
+      const d = new Date();
+      document.getElementById("pra1").innerHTML = d;
 
-        function myFunction(p1, p2) {
-            return p1 * p2;
-        }
-        document.getElementById("example1").innerHTML = myFunction(4, 3);
+      const date = new Date(2022, 3, 20);
+      document.getElementById("pra1").innerHTML = date;
+      //footer
 
-        var x = myFunction(4, 3);
-        document.getElementById("example2").innerHTML = x;
+      function myFunction(p1, p2) {
+        return p1 * p2;
+      }
+      document.getElementById("example1").innerHTML = myFunction(4, 3);
 
-        function myFunction(a, b) {
-            return a * b;
-        }
+      var x = myFunction(4, 3);
+      document.getElementById("example2").innerHTML = x;
 
-        //footer
+      function myFunction(a, b) {
+        return a * b;
+      }
 
-        //table
-        
-        // create an object:
-        const person = {firstName: 'John',
-         lastName: 'Doe',
-          age: 30,
-           eyeColor: 'blue',
-        fullName: function() {
-            return this.firstName + " " + this.lastName;
-        }
-        };
-        //Display some data from the object:
-        document.getElementById("pr").innerHTML = person.firstName + " is " + person.age + " years old. ";
-        document.getElementById("pr1").innerHTML = person.fullName();
-        document.getElementById("pr2").innerHTML = person.fullName();
+      //footer
 
-        //table
+      //table
 
-        //header
+      // create an object:
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 30,
+        eyeColor: "blue",
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+      //Display some data from the object:
+      document.getElementById("pr").innerHTML =
+        person.firstName + " is " + person.age + " years old. ";
+      document.getElementById("pr1").innerHTML = person.fullName();
+      document.getElementById("pr2").innerHTML = person.fullName();
 
-        let text = "Gulshan Rahman";
-        document.getElementById("demo").innerHTML = text.length;
+      //table
 
-        let number = "28";
-        document.getElementById("demo1").innerHTML = number.length;
+      //header
 
-        //header
+      let text = "Gulshan Rahman";
+      document.getElementById("demo").innerHTML = text.length;
 
-        //main
+      let number = "28";
+      document.getElementById("demo1").innerHTML = number.length;
 
-        let answer1 = "It's alright";
-        let answer2 = "He is called 'tommy'";
-        let answer3 = 'He is called "tommy"';
+      //header
 
-        document.getElementById("pra1").innerHTML = answer1 + "<br>" + answer2 + "<br>" + answer3;
+      //main
 
-        //main
+      let answer1 = "It's alright";
+      let answer2 = "He is called 'tommy'";
+      let answer3 = 'He is called "tommy"';
 
-        //section
-        let carName1 = "volvo"; // Double quotes
-        let carName2 = 'hero'; // single quotes
+      document.getElementById("pra1").innerHTML =
+        answer1 + "<br>" + answer2 + "<br>" + answer3;
 
-        document.getElementById("pra2").innerHTML = carName1 + " " + carName2;
+      //main
 
-        //section
-        
-        //article
+      //section
+      let carName1 = "volvo"; // Double quotes
+      let carName2 = "hero"; // single quotes
 
-        let text1 = "Gulshan Rahman" // String written inside quotes
-        document.getElementById("pra3").innerHTML = text1 ;
+      document.getElementById("pra2").innerHTML = carName1 + " " + carName2;
 
-        //article
+      //section
 
-        //container
-        function displayDate() {
-            document.getElementById("pra1").innerHTML = Date();
-        }
+      //article
 
-        //container
+      let text1 = "Gulshan Rahman"; // String written inside quotes
+      document.getElementById("pra3").innerHTML = text1;
 
-        // aside
-        
-        // Create and display a variable:
-        let car1 = "Fiat";
-        document.getElementById("carsName").innerHTML = car1;
-        
+      //article
 
-        // aside
+      //container
+      function displayDate() {
+        document.getElementById("pra1").innerHTML = Date();
+      }
 
-        //nav
+      //container
 
-        //Create an Object:
-        const car2 = {type:"Fiat", model:"500", color:"white"};
-        //Display some data from the object:
-        document.getElementById("demo2").innerHTML = car2.type;
-        document.getElementById("demo3").innerHTML = "The car type is " + car2.type;
-        document.getElementById("demo4").innerHTML = "The car type is " + car2.type + "<br>" + "The car model is " + car2.model + "<br>" + "The car color is " + car2.color;
-        document.getElementById("demo5").innerHTML = "The car type is " + car2.type + "<br>" + " " + car2.model + "<br>" + " " + car2.color;
+      // aside
 
+      // Create and display a variable:
+      let car1 = "Fiat";
+      document.getElementById("carsName").innerHTML = car1;
 
-        //nav
+      // aside
 
+      //nav
+
+      //Create an Object:
+      //const car2 = { type: "Fiat", model: "500", color: "white" };
+      let car = `type:"Fiat", model:"500", color:"white"`;
+      document.getElementById("demo2").innerHTML = `The car is ${car.type}`;
+      //Display some data from the object:
+      //document.getElementById("demo2").innerHTML = car2.type;
+      //document.getElementById("demo3").innerHTML =
+      //  "The car type is " + car2.type;
+      //document.getElementById("demo4").innerHTML =
+      //  "The car type is " +
+      //  car2.type +
+      //  "<br>" +
+      //  "The car model is " +
+      //  car2.model +
+      //  "<br>" +
+      //  "The car color is " +
+      //  car2.color;
+      //document.getElementById("demo5").innerHTML =
+      //  "The car type is " +
+      //  car2.type +
+      //  "<br>" +
+      //  " " +
+      //  car2.model +
+      //  "<br>" +
+      //  " " +
+      //  car2.color;
+      //
+      //nav
     </script>
-</body>
+  </body>
 </html>
