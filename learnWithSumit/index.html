@@ -1,35 +1,30 @@
-
-
-
-
-
-
-
-
 <!--JS Home-->
 
 <!DOCTYPE html>
 <html>
-<body>
-    
+  <body>
     <h2>My First Javascript</h2>
-    
-    <button type="button" onclick="document.getElementById('demo').innerHTML = Date() ">Click me to display Date and Time</button>
-    
+
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML = Date() "
+    >
+      Click me to display Date and Time
+    </button>
+
     <p id="demo"></p>
-    
-    
+
     <script>
-function myFunction(p1, p2) {
-  return p1 * p2;
-}
-document.getElementById("demo").innerHTML = myFunction(4, 3);
-        
-function displayDate() {
-    document.getElementById("demo").innerHTML = Date ();
-}
-</script>
-    </body>
+      function myFunction(p1, p2) {
+        return p1 * p2;
+      }
+      document.getElementById("demo").innerHTML = myFunction(4, 3);
+
+      function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+    </script>
+  </body>
 </html>
 
 <!--JS Home-->
@@ -38,41 +33,37 @@ function displayDate() {
 
 <!DOCTYPE html>
 <html>
-<body>
-    
-    <button onclick="document.getElementById('demo').innerHTML
-                     = Date() ">The time is ?</button>
-    
+  <body>
+    <button
+      onclick="document.getElementById('demo').innerHTML
+                     = Date() "
+    >
+      The time is ?
+    </button>
+
     <p id="demo"></p>
-    
+
     <button onclick="this.innerHTML=Date()">Show Time</button>
-    
-    <button onclick="displayDate()"> Time</button>
-    
+
+    <button onclick="displayDate()">Time</button>
+
     <script>
-    //Create and display a variable
-    let car = "Volvo";
-    document.getElementById("demo").innerHTML = car;
+      //Create and display a variable
+      let car = "Volvo";
+      document.getElementById("demo").innerHTML = car;
 
-    
-//Create an Object
-    const car = {type:"Fiat", model:"500", color:"white"};
-    
-//Display some data from the object:
-    document.getElementById("demo").innerHTML = 
-        "The car type is " + car.type ;
-    
+      //Create an Object
+      const car = { type: "Fiat", model: "500", color: "white" };
+
+      //Display some data from the object:
+      document.getElementById("demo").innerHTML = "The car type is " + car.type;
     </script>
-  
 
+    <!--JS Event-->
 
+    <!--JS Object-->
 
-
-<!--JS Event-->
-
-<!--JS Object-->
-
-<!--
+    <!--
 
 <h2 id="demo2"></h2>
 
@@ -94,16 +85,12 @@ function displayDate() {
 </script>
      
 -->
-    
 
-<!--JS Object-->
+    <!--JS Object-->
 
-<!--JS Strings-->
+    <!--JS Strings-->
 
-
-
-<!--JS Strings-->
-    
+    <!--JS Strings-->
+    <!-- <script src="scripts/main.js"></script> -->
   </body>
-
 </html>
