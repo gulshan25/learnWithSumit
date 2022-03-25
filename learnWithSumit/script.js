@@ -1,3 +1,5 @@
+"use strict";
+
 // for in
 
 const cars = { name: "volvo", weight: 500, color: "white" };
@@ -5,7 +7,7 @@ const cars = { name: "volvo", weight: 500, color: "white" };
 for (let car in cars) {
     console.log(cars[car]);
 }
-
+debugger;
 const car = { name: "volvo", weight: 500, color: "white" };
 
 for (let x in car) {
@@ -17,25 +19,25 @@ const fruit = { name: "Apple", color: "Red", shape: "Round" };
 for (let x in fruit) {
     console.log(fruit[x]);
 }
-
+debugger;
 const fruits = { name: "Apple", color: "Red", shape: "Round" };
 
 for (let fruit in fruits) {
     console.log(fruits[fruit]);
 }
-
+debugger;
 const numbers = [45, 4, 9, 16, 25];
 
 for (let number in numbers) {
     console.log(number);
 }
-
+debugger;
 const numbers = [45, 4, 9, 16, 25];
 
 for (let number in numbers) {
     console.log(numbers[number]);
 }
-
+debugger;
 const fruits = ["Apple", "Banana", "Cherry", "Orange", "Kiwi"];
 
 for (let fruit in fruits) {
@@ -54,13 +56,13 @@ for (let fN in firstName) {
 }
 
 // for of loop
-
+debugger;
 let x = "Gulshan Rahman";
 
 for (let a of x) {
     console.log(a);
 }
-
+debugger;
 let x = ["Gulshan Rahman"];
 
 for (let a of x) {
@@ -117,3 +119,46 @@ function getLanguage() {
     return language;
 }
 console.log(`I love ${getLanguage()}`);
+
+let i = 0;
+let text = "";
+
+while (i < 10) {
+    text += " " + i;
+    i++;
+}
+console.log(text);
+
+const hello = () => "Hello World!";
+
+class Car {
+    constructor(name, year) {
+        this.name = name;
+        this.year = year;
+    }
+
+    detail(colour) {
+        console.log(`This is ${this.name} made in ${this.year}. It is ${colour}`);
+    }
+}
+
+const car1 = new Car("Toyota", 2017);
+const car2 = new Car("BMW", 2020);
+const car3 = new Car("Suzuki", 2008);
+
+car1.detail("white");
+car2.detail("red");
+car3.detail("blue");
+
+let person = {
+    firstName: "Gulshan",
+    lastName: "Rahman",
+};
+console.log(JSON.stringify(person));
+
+debugger;
+let car = {
+    name: "Hero",
+    weight: 500,
+};
+console.log(JSON.stringify(car));
